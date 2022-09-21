@@ -1,0 +1,153 @@
+body{
+    background: url(../images/bg-desktop.svg) var(--cor-fundo);
+    
+    
+}
+@media (max-width:425px){
+    body{
+        background: url(../images/bg-mobile.svg) var(--cor-fundo) top no-repeat;
+        background-size:contain;
+        }
+
+}
+
+main{
+    margin: 30px;
+}
+
+
+/*logo*/
+.logo{
+    margin-bottom: 50px;
+}
+.logo img {
+    font-size: 40px;
+}
+
+@media (max-width:425px){
+    .logo{
+        margin-top: 55px;
+    }
+    .logo img {
+        height: 40px;   
+    }
+}
+
+
+
+/*principal*/
+.principal{
+    display: grid;
+    grid-template-areas: "img tex";
+    color: #fff;
+}
+
+.principal img {
+    grid-area: img;
+}
+
+.tex{
+    grid-area: tex;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.texto {
+  font-family: var(--letra-principal);
+  font-weight: 400;
+}
+
+.titulos {
+    font-family: 'Poppins', sans-serif;
+}
+.titulos h2{
+    font-size: 30px;
+}
+.btn{
+    margin-top: 30px;
+}
+
+.btn a{
+   background-color: #fff;
+   padding: 20px 70px;
+   border-radius: 30px;
+   box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.174);
+   transition: 0.3s;
+}
+
+.btn a:hover{
+    
+    background-color:var(--cor-interacao);
+
+}
+
+@media (max-width:990px){
+    .principal img{
+        max-width: 300px;
+    }
+}
+@media (max-width:990px){
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .tex{
+        margin-left: 0;
+    }
+    .tex .titulos{
+        text-align: center;
+    }   
+    .tex .texto{
+        text-align: center;
+    } 
+    .btn{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+    
+/*footer*/
+.social{
+    display: flex;
+    justify-content: end;
+    
+}
+.social a{
+    display: flex;
+    font-size: 20px;
+    grid-area: social;
+    color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.social .facebook{
+    width: 85px;
+    
+}
+.social a:hover{
+    color: var(--cor-interacao);
+    border:2px solid var(--cor-interacao) ;
+}
+
+@media (max-width:1440px){
+    .social{
+         
+            height: 120px;
+            width: 100%;
+            justify-content: center;
+            align-items:flex-end
+            }
+    }
+
+
+
+
+    
